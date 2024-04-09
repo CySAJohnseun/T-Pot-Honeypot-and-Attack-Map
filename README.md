@@ -1,8 +1,35 @@
-# T-Pot-Honeypot-and-Attack-Map
+# # T-Pot-Honeypot-and-Attack-Map
 
 ![AttackMap](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/vivaldi_dWaAODVwOG.png?raw=true)
 
-# What is a Honeypot?
+## Objective
+
+My aim is to enhance my proficiency in cybersecurity threat analysis utilizing the Kibana platform. I will develop the ability to interpret data visualizations within Kibana, analyze global attack trends using real-time mapping, and leverage Kibana to pinpoint attack vectors directed toward my network. This practical experience will strengthen my skills in constructing custom Kibana dashboards, empowering me to derive actionable insights regarding potential vulnerabilities within my infrastructure.
+
+### Skills Learned
+- **Installation and Configuration**: Setting up and configuring the Teapot honeypot platform.
+- **Firewall Configuration**: Modifying firewall rules to allow inbound access to the Honeypot.
+- **Web Portal Access**: Accessing and navigating the web portal of the Honeypot platform.
+- **Cybersecurity Analysis**: Analyzing real-time attack data using tools like the Attack Map and Kibana dashboard.
+- **Querying Data**: Practicing querying skills in Kibana to extract relevant information.
+- **Data Visualization**: Interpreting and understanding visualizations such as attack maps, heat maps, and IP reputation data.
+- **Security Monitoring**: Monitoring and analyzing incoming attacks and their sources.
+- **IP Reputation Analysis**: Checking the reputation of source IPs involved in attacks.
+- **Hands-on Experience**: Gaining practical experience with Honeypot deployment, monitoring, and analysis.
+### Tools Used
+- **Teapot**: All-in-one multi-Honeypot platform
+- **GitHub**: Documentation and resources access
+- **Elasticsearch**: Data querying and storage
+- **Kibana**: Web GUI for Elasticsearch, data querying, and visualization
+- **SpiderFoot**: Collection of OSINT tools for gathering information
+- **Firewall Management Tool**: Configuration of firewall rules for inbound access control
+
+I will be using Vultr's services to minimize server cost in-result making this Honey Lab project free. 
+Registration link to recieve $100 of credit: https://www.vultr.com/?ref=9605787-8H
+
+These tools are essential for deploying, monitoring, analyzing, and visualizing data related to cyber threats and attacks, providing a comprehensive suite for cybersecurity analysis and defense.
+
+## Honeypot
 
 **What is a Honeypot?**
 
@@ -18,64 +45,41 @@
 
 Think of a honeypot like a jar of honey strategically placed in the woods. A bear, attracted to the sweet smell, will try to get the honey. This allows you to observe the bear's behavior, its methods (how it tries to open the jar), and potentially identify the bear itself. Similarly, a honeypot lures in attackers, providing a safe space to study their actions.
 
-## Prerequisites
+## Steps
 
-- Server Provider
-	- I will be using Vultr's services to minimize server cost in-result making this Honey Lab project free. (To receive $100 of credit use this referral link: https://www.vultr.com/?ref=9605787-8H)
+### Step 1: Deploying New Instance
 
-### Step 1: Building the Cloud Computer
-![Step1BuildingA](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408210113.jpg?raw=true)
-
-1. Go to https://my.vultr.com/ and click on "Product" > "Cloud Computer - Shared CPU" > Select the server location nearest to you!
-
-### Step 1: Building the Cloud Computer
-![Step1BuildingISO](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408210456.jpg?raw=true)
-2. Upload the ISO Image
-   
-   ISO Image Link: https://objects.githubusercontent.com/github-production-release-asset-2e65be/27275442/a9bab481-a247-4f60-bd33-8c7a590443d8?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240408%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240408T154903Z&X-Amz-Expires=300&X-Amz-Signature=9ba1fd8fe40d0b05c61c8223c28fb93a2ea5f4f2f1644f2e71de784875c6644c&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=27275442&response-content-disposition=attachment%3B%20filename%3Dtpot_amd64.iso&response-content-type=application%2Foctet-stream
+![Deploy1](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Deploy1.png?raw=true)
+**1. Go to https://my.vultr.com/ and click on "Product" > "Cloud Computer - Shared CPU" > Select the server location nearest to you!**
 
 
-3. Once you have uploaded the "tpot_amd64" iso proceed to choose your preferred cloud server specifications. ( I have chosen "Regular Cloud Computer > 160GB SSD > Disabled "Auto Backups").
-
-![Step1Building2](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408210608.jpg?raw=true)
-
-![Step1Building3](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408211015.jpg?raw=true)
-
-4. Enter your Server Host Name & deploy the machine.
-
-![Step1Buildin22](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408211053.jpg?raw=true)
-
-![Step1Buildin223](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408211234.jpg?raw=true)
-
-![Step1Buildin2s223](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408211411.jpg?raw=true)
-
-![Step1Buildin2s3223](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408211526.jpg?raw=true)
-
-We will be using "View Console" to interact with our Honeypot Installation
-
-![Step1Buildin2s33223](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408211613.jpg?raw=true)
-
-### Step 3: Implementing Firewall Rules
-1. Go to your Honeypot and click on Settings > Firewall > Firewall (Manage) > Add Firewall Group
+![Deploy2](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Deploy2.png?raw=true)
+**2. Upload and select "tpot_amd64.iso" as the image.**
 
 
-Include a description for your Firewall Group
-
-1. Protocol - TCP | Port (or Range) - 1:65535 | Source: My IP | Click "Add Firewall Rule"
-
-![Ports1](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408212336.jpg?raw=true)
-
-2. Protocol - UDP | Port (or Range) - 1:65535 | Source: My IP | Click "Add Firewall Rule"
-
-![Ports2](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408212402.jpg?raw=true)
-
-![PortsOverall](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408212453.jpg?raw=true)
+![Deploy3](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Deploy3.png?raw=true)
+**3. Choose the "Regular Cloud Compute Plan" > 160GB SSD**
 
 
-Click on "Firewall" and Select the Firewall Group you have just recently created and update.
+![Deploy4](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Deploy4.png?raw=true)
+**4. Disable Both Auto Backups & IPv6***
 
-![UpdateFirewall](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408212630.jpg?raw=true)
 
+![Deploy5](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Deploy5.png?raw=true)
+**5. Insert your Honeypot Server Hostname & Deploy**
+
+
+![Deploy6](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Deploy6.png?raw=true)
+**6. Click on your Honeypot once the status displays "Running"
+
+![Deploy7](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Deploy7.png?raw=true)
+
+![Deploy8](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Deploy8.png?raw=true)
+**7. Settings > Firewall > (Manage) > Add Firewall Group > Enter Firewall Group Description**
+
+![Deploy9](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Deploy9.png?raw=true)
+
+**8. Once you have created these Firewall Rules > Select "Compute" > Setting > Firewall > Select the Honeypot Firewall you have created**
 ### Step 3: Installing T Pot Framework
 
 ![InstallingFirewall1](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408212721.jpg?raw=true)
