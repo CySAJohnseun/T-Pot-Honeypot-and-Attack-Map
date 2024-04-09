@@ -193,16 +193,32 @@ Change the existing Firewall Rule to match the following:
 - **Automated Scans:** Many attacks are carried out by automated scripts and bots that systematically scan the internet for open ports. They often try a range of common ports, including 8080, regardless of the specific service running on them.
 
 **Important Note:** While attackers frequently target port 8080, the reasons outlined above mean that _any_ web-facing service on _any_ port can be a target. Simply using a non-standard port does not make it magically more secure.
+
 ## Attacker Origins
 
-- **Where are attacks originating from (geographically)?** Can you identify specific countries or regions with higher concentrations of attacks?
+**Where are attacks originating from (geographically)?**
 
-- **Are there any repeat offenders (IP addresses)?** Can you identify individual IP addresses that are repeatedly attacking, indicating a persistent threat actor?
+Top 3 Countries: United States, China, and United Kingdom.
 
+## Possible Vulnerabilities
 
-## Vulnerabilities
+**Which services or ports are being targeted most frequently?** 
 
-- **Which services or ports are being targeted most frequently?** This will highlight potential weak areas in your network.
--Port 6000 & 8080
+Ports 6000 and 8080 were being targeted the most, which might indicate a potential vulnerability on the machine.
 
-- **Are any attacks successful?** If so, it reveals an immediate need to address and patch those vulnerabilities
+# Conclusion
+
+The honeypot data analysis reveals the following insights:
+
+- Global Interest: Attacks originate from various countries (China, US, UK), indicating global probing of your network.
+- Persistent Threat: A significant number of attempts (532) from a single source in China suggests a sustained interest, warranting further investigation and potential blocking.
+- Targeted Services: Ports 6000 and 8080 are frequently targeted, indicating potential vulnerabilities or common exploit attempts.
+
+Recommendations:
+
+1. Investigate the Chinese actor behind the 532 attempts for patterns and consider blocking if necessary.
+2. Audit services on ports 6000 and 8080 for vulnerabilities and patch urgently or consider port changes.
+3. Review firewall rules to restrict unnecessary access to these ports.
+4. Enhance the honeypot for more specific intelligence gathering.
+
+Note: Honeypot data provides valuable but limited insights; supplement with other security tools for a comprehensive threat picture.
