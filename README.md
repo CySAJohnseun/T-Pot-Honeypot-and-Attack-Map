@@ -161,8 +161,8 @@ Change the existing Firewall Rule to match the following:
 
 ---
 
-# 10 hours later...
-
+# 12+ hours later...
+![After](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/After.png?raw=true)
 
 ---
 
