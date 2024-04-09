@@ -166,17 +166,9 @@ Change the existing Firewall Rule to match the following:
 
 ---
 
-# Analyze the data
+# Data Interpretation
 
-
-Honeypot dashboards are designed to give you insights into the types of attacks and attackers targeting your network. Here are some of the key questions you might want to ask, with a focus on what the dashboard can help you answer:
-
-**Types of Attacks**
-
-- **What are the most common attack vectors?** Are attackers trying to exploit web vulnerabilities, brute force SSH logins, or target other specific services?
-- **Are there any new or unusual types of attacks?** Have new attack patterns recently emerged?
-- **What is the overall volume of attacks?** Are attacks increasing or decreasing in intensity?
-
+## Favorable Attacks by Destination Ports: 6000 & 8080
 
 #### Port 6000: The default port used for communication by the X Window System (X11 or Xorg). What is X11? A graphical display system common on Unix-based operating systems. It allows users to run applications with graphical interfaces on a remote server, displaying those interfaces on their local machine.
 
@@ -201,47 +193,16 @@ Honeypot dashboards are designed to give you insights into the types of attacks 
 - **Automated Scans:** Many attacks are carried out by automated scripts and bots that systematically scan the internet for open ports. They often try a range of common ports, including 8080, regardless of the specific service running on them.
 
 **Important Note:** While attackers frequently target port 8080, the reasons outlined above mean that _any_ web-facing service on _any_ port can be a target. Simply using a non-standard port does not make it magically more secure.
-
----
-**Attacker Origins**
+## Attacker Origins
 
 - **Where are attacks originating from (geographically)?** Can you identify specific countries or regions with higher concentrations of attacks?
 
 - **Are there any repeat offenders (IP addresses)?** Can you identify individual IP addresses that are repeatedly attacking, indicating a persistent threat actor?
 
----
 
-
-**Attack Sophistication**
-
-- **Are the attacks mostly automated scripts or more targeted attempts?** Are you seeing simple, unsophisticated attacks, or evidence of attackers using complex tools and techniques?
-- **Are there attempts to disguise the attacker's activity?** Are they using anonymization tools or proxies?
-
----
-
-
-**Vulnerabilities**
+## Vulnerabilities
 
 - **Which services or ports are being targeted most frequently?** This will highlight potential weak areas in your network.
 -Port 6000 & 8080
 
-- **Are any attacks successful?** If so, it reveals an immediate need to address and patch those vulnerabilities.
-
----
-
-
-
-**Typical Dashboard Features**
-
-A good honeypot dashboard should help you visualize this information. Common features include:
-
-- **Maps:** Showing geographic origin of attacks
-- **Attack timelines:** Illustrating the frequency and intensity of attacks over time
-- **Top attacked services/ports:** Listing the most frequent attack targets
-- **Alerts:** Highlighting critical events or especially sophisticated attacks
-- **Detailed logs:** Providing raw data for deeper analysis
-
-**Important Considerations**
-
-- **Interaction vs. Production Honeypots:** Is your honeypot designed primarily for research and observation, or is it supposed to simulate a real production system? The questions you ask will depend on the type of honeypot.
-- **Dashboard Customization:** Can you filter and customize the views on your dashboard to focus on the most relevant data?
+- **Are any attacks successful?** If so, it reveals an immediate need to address and patch those vulnerabilities
