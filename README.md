@@ -24,10 +24,12 @@ Think of a honeypot like a jar of honey strategically placed in the woods. A bea
 	- I will be using Vultr's services to minimize server cost in-result making this Honey Lab project free. (To receive $100 of credit use this referral link: https://www.vultr.com/?ref=9605787-8H)
 
 ### Step 1: Building the Cloud Computer
-
+![Step1BuildingA](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408210113.jpg?raw=true)
 
 1. Go to https://my.vultr.com/ and click on "Product" > "Cloud Computer - Shared CPU" > Select the server location nearest to you!
 
+### Step 1: Building the Cloud Computer
+![Step1BuildingISO](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408210456.jpg?raw=true)
 2. Upload the ISO Image
    
    ISO Image Link: https://objects.githubusercontent.com/github-production-release-asset-2e65be/27275442/a9bab481-a247-4f60-bd33-8c7a590443d8?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240408%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240408T154903Z&X-Amz-Expires=300&X-Amz-Signature=9ba1fd8fe40d0b05c61c8223c28fb93a2ea5f4f2f1644f2e71de784875c6644c&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=27275442&response-content-disposition=attachment%3B%20filename%3Dtpot_amd64.iso&response-content-type=application%2Foctet-stream
@@ -35,15 +37,25 @@ Think of a honeypot like a jar of honey strategically placed in the woods. A bea
 
 3. Once you have uploaded the "tpot_amd64" iso proceed to choose your preferred cloud server specifications. ( I have chosen "Regular Cloud Computer > 160GB SSD > Disabled "Auto Backups").
 
+![Step1Building2](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408210608.jpg?raw=true)
+
+![Step1Building3](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408211015.jpg?raw=true)
 
 4. Enter your Server Host Name & deploy the machine.
 
+![Step1Buildin22](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408211053.jpg?raw=true)
 
+![Step1Buildin223](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408211234.jpg?raw=true)
 
+![Step1Buildin2s23](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408211255.png?raw=true)
 
+![Step1Buildin2s223](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408211411.jpg?raw=true)
+
+![Step1Buildin2s3223](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408211526.jpg?raw=true)
 
 We will be using "View Console" to interact with our Honeypot Installation
 
+![Step1Buildin2s33223](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408211613.jpg?raw=true)
 
 ### Step 3: Implementing Firewall Rules
 1. Go to your Honeypot and click on Settings > Firewall > Firewall (Manage) > Add Firewall Group
@@ -53,9 +65,13 @@ Include a description for your Firewall Group
 
 1. Protocol - TCP | Port (or Range) - 1:65535 | Source: My IP | Click "Add Firewall Rule"
 
+![Ports1](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408212336.jpg?raw=true)
 
 2. Protocol - UDP | Port (or Range) - 1:65535 | Source: My IP | Click "Add Firewall Rule"
 
+![Ports2](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408212402.jpg?raw=true)
+
+![PortsOverall](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408212453.jpg?raw=true)
 
 
 Click on "Firewall" and Select the Firewall Group you have just recently created and update.
