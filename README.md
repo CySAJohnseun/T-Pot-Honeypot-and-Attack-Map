@@ -47,8 +47,6 @@ Think of a honeypot like a jar of honey strategically placed in the woods. A bea
 
 ![Step1Buildin223](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408211234.jpg?raw=true)
 
-![Step1Buildin2s23](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408211255.png?raw=true)
-
 ![Step1Buildin2s223](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408211411.jpg?raw=true)
 
 ![Step1Buildin2s3223](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408211526.jpg?raw=true)
@@ -76,8 +74,32 @@ Include a description for your Firewall Group
 
 Click on "Firewall" and Select the Firewall Group you have just recently created and update.
 
+![UpdateFirewall](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408212630.jpg?raw=true)
 
 ### Step 3: Installing T Pot Framework
+
+![InstallingFirewall1](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408212721.jpg?raw=true)
+
+![InstallingFirewall2](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408212732.jpg?raw=true)
+
+![InstallingFirewall3](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408212743.jpg?raw=true)
+
+![InstallingFirewall4](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408212753.jpg?raw=true)
+
+![InstallingFirewall5](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408212807.jpg?raw=true)
+
+![InstallingFirewall6](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408212819.jpg?raw=true)
+
+![InstallingFirewall7](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408212829.jpg?raw=true)
+
+![InstallingFirewall8](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408212839.jpg?raw=true)
+
+![InstallingFirewall9](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408212850.jpg?raw=true)
+
+![InstallingFirewall10](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408212913.jpg?raw=true)
+
+![InstallingFirewall11](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408212921.jpg?raw=true)
+
 
 
 
