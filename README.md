@@ -109,6 +109,8 @@ Think of a honeypot like a jar of honey strategically placed in the woods. A bea
 
 ### T-Pot Framework
 
+![TPotFramework](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408213405.jpg?raw=true)
+
 
 **Core Concepts**
 
@@ -147,12 +149,15 @@ Think of a honeypot like a jar of honey strategically placed in the woods. A bea
 
 ### Step 4: Expose Our Machine to the World
 
-1. Click on "Attack Map"
-
+Change the existing Firewall Rule to match the following:
+![ExposeMachine1](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/ExposeMachine1.png?raw=true)
 
 
 
 ### Step 5: Kibana: Visualization/Dashboard
+
+![Kibana1](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408214503.jpg?raw=true)
+![Kibana2](https://github.com/CySAJohnseun/T-Pot-Honeypot-and-Attack-Map/blob/main/images/Pasted%20image%2020240408214615.jpg?raw=true)
 
 ---
 
